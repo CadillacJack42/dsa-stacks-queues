@@ -1,29 +1,31 @@
+// define new class object with methods for interaction
+
 class Stack {
   constructor() {
     this.stack = [];
   }
-
+  //  return length of array / stack
   get length() {
     return this.stack.length;
   }
-
+  //  allow user to insert to stack
   push(item) {
     return this.stack.push(item);
   }
-
+  //  allow user to get last item on stack
   pop() {
     return this.stack.pop();
   }
-
+  //  allow user to check last item in stack
   peek() {
     return this.stack[this.length - 1];
   }
-
+  // allow user to check if stack has properties
   isEmpty() {
     return this.length === 0;
   }
 }
-
+//  Create new instance of stack class
 const cohort = new Stack();
 cohort.push("jack");
 cohort.push("alice");
@@ -48,6 +50,7 @@ console.log(cohort.isEmpty());
 cohort.pop();
 console.log(cohort.isEmpty());
 
+//  define new class object decribing a queue
 class movieGoers {
   constructor() {
     this.queue = [];
